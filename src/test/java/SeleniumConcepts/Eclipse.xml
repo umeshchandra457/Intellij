@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test  name="Test">
+  <classes>
+  	<class name="testNG.AllAnnotations"></class>
+  	<class name="testNG.AllTests"></class>
+  	<class name="testNGSuit.AllSuite"></class>
+  	<class name="testNGSuit.AllSuite2"></class>
+  </classes>
+  </test> <!-- Test -->
+  
+  
+  <test  name="Test1">
+  <classes>
+  	<class name="testNG.AllAnnotations"></class>
+  	<class name="testNG.AllTests"></class>
+  	<class name="testNGSuit.AllSuite"></class>
+  	<class name="testNGSuit.AllSuite2"></class>
+  </classes>
+  </test> <!-- Test -->
+  
+  <test  name="Test3">
+  <classes>
+  	<class name="testNG.AllAnnotations"></class>
+  	<class name="testNG.AllTests"></class>
+  	<class name="testNGSuit.AllSuite"></class>
+  	<class name="testNGSuit.AllSuite2"></class>
+  
+  </classes>
+  </test >
+    <test  name="Test4">
+      <classes>
+          <class name="testNG.ParameterClass"/>
+      </classes>
+        </test >
+  <!--Test -->
+  
+</suite> <!-- Suite -->
+
+
+  
+

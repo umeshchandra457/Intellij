@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="/Users/umeshburraa/eclipse-workspace-2024/ConceptsSelenium/src/test/java/testNG/TestNGPriorityClass.java">
+        <groups>
+            <run>
+                <include name="Functional"/>
+                 <include name="Regression"/><!---->
+                 <exclude name="Sanity"/>   <!--//functional will execute only with sanity AND Regression-->
+                <include name="Master"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="testNG.TestNGPriorityClass"/>
+            <class name="testNG.AllTests"/>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite"  >
+        <groups>
+        <run>
+            <include name="Login"/>
+            <include name="Register"/>
+            <include name="Master"/>
+            <!-- <include name="Register"/> <include name="Master"/>-->
+        </run>
+        </groups>
+        <listeners>
+            <listener class-name="openCratProject.org.Resources.utilities.ExtentReport"/>
+        </listeners>
+        <test verbose="2"  name="ChromeBrowser Test">
+             <parameter name="browser" value="chrome"/>
+             <parameter name="os" value="MacBook"/>
+            <!--  -->  
+                 <classes>
+                    <class name="openCratProject.org.Tests.LoginTest"/>
+                     <class name="openCratProject.org.Tests.RegisterTest"/>
+                 </classes>
+        </test>
+    
+            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- Test 2 
+            <test verbose="2" preserve-order="true" name="FirefoxBrowser Test" >
+            <parameter name="browser" value="chrome"/>
+            <parameter name="os" value="MacBook"/>
+            <classes>
+            <class name="openCratProject.org.Tests.RegisterTest">
+            </class>
+            </classes>
+            </test>         
+
+             Test 3
+           <test verbose="2" preserve-order="true" name="Safari Browser Test" >
+           <parameter name="browser" value="safari"/>
+           
+           <classes>
+           <class name="openCratProject.org.Tests.RegisterTest"><methods>
+               <include name="registerTest"/>
+           </methods>
+           </class>
+           </classes>
+           </test>-->
+</suite>

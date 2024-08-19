@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="OpenCart Group Test">
+    <groups>
+        <run>
+            <include name="Master"/>
+            <!-- <include name="Login"/> <include name="Master"/>
+             <include name="Register/>  <exclude name="Master"/>"/>-->
+        </run>
+    </groups>
+    <listeners>
+        <listener class-name="openCratProject.org.Resources.utilities.ExtentReport"/>
+    </listeners>
+    <test thread-count="5" name="All Class Test">
+        <classes>
+            <class name="openCratProject.org.Tests.RegisterTest"/>
+            <class name="openCratProject.org.Tests.LoginTest"/>
+        </classes>
+    </test> <!-- Test -->
+
+
+
+
+
+    <!--
+           <test verbose="2" preserve-order="true" name="Safari Browser Test" >
+           <parameter name="browser" value="safari"/>
+           
+           <classes>
+           <class name="openCratProject.org.Tests.RegisterTest"><methods>
+               <include name="registerTest"/>
+           </methods>
+           </class>
+           </classes>
+           </test>-->
+</suite> <!-- Suite -->

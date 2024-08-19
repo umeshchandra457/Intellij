@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="OpenCart Group Test">
+    <groups>
+        <run>
+             
+             
+                <include name="Regression"/>
+                <include name="Master"/>
+                 <exclude name="Sanity"/>
+            <!-- <include name="Regression"/> <include name="Master"/> -->
+        </run>
+    </groups>
+   
+    <test thread-count="5" name="All Class Test">
+        <classes>
+            <class name="testNG.GroupsAnnotationClass"/>
+            
+        </classes>
+    </test> <!-- Test -->
+
+
+
+
+
+    <!--
+           <test verbose="2" preserve-order="true" name="Safari Browser Test" >
+           <parameter name="browser" value="safari"/>
+           
+           <classes>
+           <class name="openCratProject.org.Tests.RegisterTest"><methods>
+               <include name="registerTest"/>
+           </methods>
+           </class>
+           </classes>
+           </test>-->
+</suite> <!-- Suite -->
